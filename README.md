@@ -1,5 +1,5 @@
 # Financing-Healthcare-Data-Project
-![Financing Healthcare Data Pipeline Architecture](./images/fin_health_app_architecture.png)
+![Financing Healthcare Data Pipeline Architecture](./images/financing_healthcare_data_engineering_diagram.png)
 
 
 
