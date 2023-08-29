@@ -2,7 +2,7 @@
 
 Welcome to my Financing Healthcare Data Engineering Project, a project pursued to demonstrate skills with key tools, technologies, and concepts related to data and analytics engineering. See [table of contents](#table-of-contents ) below to navigate.
 
-Or, if you are interested in jumping straight into the code, you can view the following files:
+Or, if you are interested in jumping straight into the code, you can view the following files in the repo above:
 * main.py - contains Prefect data ingestion pipeline code
 * dbt_models - folder containing SQL data transformation code used in dbt
 * snowflake_setup_queries_DDL.sql - contains SQL commands used to initialize Snowflake roles, databases, and data warehouses
