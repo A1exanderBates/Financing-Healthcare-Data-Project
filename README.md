@@ -26,7 +26,14 @@ Snowflake - a cloud-native data warehousing platform that offers easy scalabilit
 dbt Cloud - a centralized environment for developing, deploying, and collaborating on dbt projects, streamlining the transformation of raw data into trusted insights. Used as the data transformation tool.
 
 
-## ETL Processes and Data Modeling
+## Data Modeling
+
+There were 15 tables used in the dataset, which could be joined on CODE, a 3 letter abbreviation for country, and YEAR. In the ERD diagram shown below, CODE between tables had an upper bound of 1, and a lower bound of 0 (not all tables displayed the same number of countries). The goal of the dbt workflow was to denormalize the 15 tables into one big table. According to an analysis done by [Fivetran](https://www.fivetran.com/blog/star-schema-vs-obt), when using a data warehouse, denormalizing data into one big table can improve query speeds by 25%-50%. 
+
+To join the tables together, I implemented a series of left joins on CODE and YEAR, which I was able to automate using a custom jinjia macro in dbt. Because left joins are dependent on the primary table join keys containing the full range of values, I made sure to choose a table with the full list of country code and range of years, ANNUAL_HEALTHCARE_EXPENDITURE_VS_GDP.
+
+Financing Healthcare ERD of Raw Tables
+![Financing Healthcare ERD](./images/financing_healthcare_ERD.png)
 
 
 ## Future Improvements
@@ -57,8 +64,4 @@ Incorporating an analysis component or a Tableau data visualization in a data en
 
 
 
-------------------------------------
 
-
-### Financing Healthcare ERD of Raw Tables
-![Financing Healthcare ERD](./images/financing_healthcare_ERD.png)
