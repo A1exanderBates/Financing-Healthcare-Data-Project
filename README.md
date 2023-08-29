@@ -6,11 +6,10 @@ Welcome to my Financing Healthcare Data Engineering Project, a project pursued t
 ![Financing Healthcare Data Pipeline Architecture](./images/financing_healthcare_data_engineering_diagram.png)
 
 ## Table of Contents
-
-[1. About the Dataset](#about-the-dataset)
-[2. Technologies Used](#technologies-used)
-[3. ETL Processes and Data Modeling](#etl-processes-and-data-modeling")
-[4. Future Improvements](#future-improvements)
+1. [About the Dataset](#about-the-dataset)
+2. [Technologies Used](#technologies-used)
+3. [ETL Processes and Data Modeling](#etl-processes-and-data-modeling")
+4. [Future Improvements](#future-improvements)
 
 ## About the Dataset
 
